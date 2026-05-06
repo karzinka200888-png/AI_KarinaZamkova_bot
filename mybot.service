@@ -1,0 +1,15 @@
+[Unit]
+Description=Karina Zamkova Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/AI_KarinaZamkova_bot
+EnvironmentFile=/root/AI_KarinaZamkova_bot/.env
+ExecStart=/root/AI_KarinaZamkova_bot/venv/bin/python bot.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,15 @@
+[Unit]
+Description=GitHub Command Runner (Git Relay)
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/AI_KarinaZamkova_bot
+EnvironmentFile=/root/AI_KarinaZamkova_bot/.env
+ExecStart=/root/AI_KarinaZamkova_bot/venv/bin/python cmdrunner.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,6 @@
+[Unit]
+Description=Auto Deploy Bot from GitHub
+
+[Service]
+Type=oneshot
+ExecStart=/root/autodeploy.sh
