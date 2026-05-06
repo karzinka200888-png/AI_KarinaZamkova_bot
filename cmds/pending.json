@@ -1,4 +1,4 @@
 {
-  "id": "check-paths-2",
-  "cmd": "ls /home/bot/ 2>/dev/null || echo no_home_bot; echo ---; ls /root/AI_KarinaZamkova_bot/; echo ---; cat /etc/systemd/system/mybot.service"
+  "id": "",
+  "cmd": ""
 }
