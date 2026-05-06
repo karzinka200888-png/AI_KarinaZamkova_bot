@@ -1,6 +1,6 @@
 {
-  "id": "check-paths-2",
-  "cmd": "ls /home/bot/ 2>/dev/null || echo no_home_bot; echo ---; ls /root/AI_KarinaZamkova_bot/; echo ---; cat /etc/systemd/system/mybot.service",
-  "output": "no_home_bot\n---\nautodeploy.service\nautodeploy.sh\nautodeploy.timer\nbot.py\ncmdrunner.py\ncmdrunner.service\ncmds\nmybot.service\nrequirements.txt\nsetup.sh\nvenv\n---\n[Unit]\nDescription=Karina Zamkova Telegram Bot\nAfter=network.target\n\n[Service]\nType=simple\nUser=root\nWorkingDirectory=/root/AI_KarinaZamkova_bot\nEnvironmentFile=/root/AI_KarinaZamkova_bot/.env\nExecStart=/root/AI_KarinaZamkova_bot/venv/bin/python bot.py\nRestart=always\nRestartSec=5\n\n[Install]\nWantedBy=multi-user.target",
+  "id": "deploy-agent-bot",
+  "cmd": "cd /root/AI_KarinaZamkova_bot && git pull origin main && source venv/bin/activate && pip install httpx beautifulsoup4 -q && cp mybot.service /etc/systemd/system/ && systemctl daemon-reload && systemctl restart mybot && sleep 3 && systemctl is-active mybot && journalctl -u mybot -n 10 --no-pager",
+  "output": "Updating 5d00146..e0c812c\nFast-forward\n cmds/pending.json | 4 ++--\n mybot.service     | 2 +-\n requirements.txt  | 2 ++\n 3 files changed, 5 insertions(+), 3 deletions(-)\nFrom https://github.com/karzinka200888-png/AI_KarinaZamkova_bot\n * branch            main       -> FETCH_HEAD\n   5d00146..e0c812c  main       -> origin/main\n/bin/sh: 1: source: not found",
   "status": "done"
 }
