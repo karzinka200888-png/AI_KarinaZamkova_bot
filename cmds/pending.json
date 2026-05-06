@@ -1,4 +1,4 @@
 {
-  "id": "deploy-agent-bot",
-  "cmd": "cd /root/AI_KarinaZamkova_bot && git pull origin main && source venv/bin/activate && pip install httpx beautifulsoup4 -q && cp mybot.service /etc/systemd/system/ && systemctl daemon-reload && systemctl restart mybot && sleep 3 && systemctl is-active mybot && journalctl -u mybot -n 10 --no-pager"
+  "id": "",
+  "cmd": ""
 }
