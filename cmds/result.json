@@ -1,6 +1,6 @@
 {
-  "id": "",
-  "cmd": "",
-  "output": "",
-  "status": ""
+  "id": "hello-test-1",
+  "cmd": "echo ready && hostname && uptime",
+  "output": "ready\nubuntu-s-1vcpu-1gb-ams3\n 18:09:46 up  1:35,  1 user,  load average: 0.09, 0.20, 0.12",
+  "status": "done"
 }
