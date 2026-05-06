@@ -1,4 +1,4 @@
 {
-  "id": "restart-new-prompt",
-  "cmd": "cd /root/AI_KarinaZamkova_bot && git pull origin main && systemctl restart mybot && sleep 3 && journalctl -u mybot -n 5 --no-pager"
+  "id": "",
+  "cmd": ""
 }
