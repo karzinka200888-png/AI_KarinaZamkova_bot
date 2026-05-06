@@ -1,6 +1,6 @@
 {
-  "id": "hello-test-1",
-  "cmd": "echo ready && hostname && uptime",
-  "output": "ready\nubuntu-s-1vcpu-1gb-ams3\n 18:09:46 up  1:35,  1 user,  load average: 0.09, 0.20, 0.12",
+  "id": "check-paths-2",
+  "cmd": "ls /home/bot/ 2>/dev/null || echo no_home_bot; echo ---; ls /root/AI_KarinaZamkova_bot/; echo ---; cat /etc/systemd/system/mybot.service",
+  "output": "no_home_bot\n---\nautodeploy.service\nautodeploy.sh\nautodeploy.timer\nbot.py\ncmdrunner.py\ncmdrunner.service\ncmds\nmybot.service\nrequirements.txt\nsetup.sh\nvenv\n---\n[Unit]\nDescription=Karina Zamkova Telegram Bot\nAfter=network.target\n\n[Service]\nType=simple\nUser=root\nWorkingDirectory=/root/AI_KarinaZamkova_bot\nEnvironmentFile=/root/AI_KarinaZamkova_bot/.env\nExecStart=/root/AI_KarinaZamkova_bot/venv/bin/python bot.py\nRestart=always\nRestartSec=5\n\n[Install]\nWantedBy=multi-user.target",
   "status": "done"
 }
