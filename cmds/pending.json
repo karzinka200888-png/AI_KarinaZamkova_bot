@@ -1,4 +1,4 @@
 {
-  "id": "",
-  "cmd": ""
+  "id": "restart-vlasna-sprava",
+  "cmd": "cd /root/AI_KarinaZamkova_bot && git pull origin main && systemctl restart mybot && sleep 3 && journalctl -u mybot -n 3 --no-pager"
 }
