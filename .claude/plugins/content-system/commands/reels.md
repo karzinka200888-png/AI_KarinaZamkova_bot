@@ -1,6 +1,6 @@
 ---
 description: Быстрая генерация вирусных Reels из текста → Notion
-allowed-tools: Read, Write, Edit, Bash, Grep, Glob, Task, mcp__dff121fa-9087-4ed6-a5cd-ad057b2d3589__notion-create-pages, mcp__dff121fa-9087-4ed6-a5cd-ad057b2d3589__notion-update-page, mcp__dff121fa-9087-4ed6-a5cd-ad057b2d3589__notion-fetch, mcp__dff121fa-9087-4ed6-a5cd-ad057b2d3589__notion-search, mcp__dff121fa-9087-4ed6-a5cd-ad057b2d3589__notion-query-data-sources
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob, Task, mcp__notion__notion-create-pages, mcp__notion__notion-update-page, mcp__notion__notion-fetch, mcp__notion__notion-search, mcp__notion__notion-query-data-sources
 argument-hint: [вставь текст поста или транскрипции]
 ---
 
