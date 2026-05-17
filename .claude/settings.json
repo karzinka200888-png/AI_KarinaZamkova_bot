@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    {
+      "type": "local",
+      "path": ".claude/plugins/content-system"
+    }
+  ]
+}
